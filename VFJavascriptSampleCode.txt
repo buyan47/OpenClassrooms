@@ -1,0 +1,17 @@
+Example 1: Let’s look at a few examples of how the Configuration Converter can help Jennifer, a Salesforce developer at Ursa Major Solar, Inc., recreate the JavaScript buttons used in their org.
+
+Ursa’s Salesforce implementation includes a custom JavaScript button that kicks off a Google search for “San Francisco.” The JavaScript for this button looks like this:
+
+window.open("https://www.google.com/search?q=San%20Francisco")
+
+When Jennifer uses the Configuration Converter to recreate this JavaScript button, the tool generates a new detail page button that is functionally equivalent and opens the same URL.
+
+Example 2: Ursa’s implementation also includes a JavaScript button that uses a “url-hack” to edit a record and set a predefined value for a field. The JavaScript looks like this:
+
+location.replace("/0016A00000MlPFl/e?00N6A00000IF4Mo=MyValue")
+
+When Jennifer runs the Configuration Converter for this button, it creates a Lightning component action that opens 
+a record for editing and sets the field with the ID of “00N6A00000IF4Mo” to “MyValue.”
+
+https://developer.secure.force.com/cookbook/recipe/building-a-table-of-data-in-a-visualforce-page
+Sample code to display data on vf page
